@@ -13,7 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { motion, stagger } from "framer-motion";
+import { easeIn, motion, stagger } from "framer-motion";
 export function CarouselSize() {
   const cardVariants = {
     offscreen: {
@@ -25,7 +25,8 @@ export function CarouselSize() {
       opacity: 1,
 
       transition: {
-        duration: 1,
+        duration: 0.8,
+        easeIn: easeIn,
       },
     },
   };
@@ -48,8 +49,6 @@ export function CarouselSize() {
       image: image4,
     },
   ];
-
-  console.log(image1);
 
   return (
     <motion.div

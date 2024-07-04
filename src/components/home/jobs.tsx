@@ -1,9 +1,34 @@
 import React from "react";
-import { CarouselSize } from "./carousel";
 import { Card } from "../ui/card";
 import { Button } from "../ui/button";
+import digitalmarketing from "/public/digital-marketing.jpg";
 
 const Jobs = () => {
+  console.log(digitalmarketing);
+
+  const data = [
+    {
+      label: "Digital Marketing",
+      image: digitalmarketing.src,
+    },
+    {
+      label: "Digital Marketing",
+      image: digitalmarketing.src,
+    },
+    {
+      label: "Digital Marketing",
+      image: digitalmarketing.src,
+    },
+    {
+      label: "Digital Marketing",
+      image: digitalmarketing.src,
+    },
+    {
+      label: "Digital Marketing",
+      image: digitalmarketing.src,
+    },
+  ];
+
   return (
     <main>
       <div className="container py-10">
@@ -16,68 +41,37 @@ const Jobs = () => {
           <Button variant={"outline"}>Backend</Button>
         </ul>
 
-        <section className="grid md:grid-cols-4 lg:grid-cols-5 gap-5">
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <img src="" alt="logo" />
-            <div>
-              <h3>Job Title</h3>
-              <div className="flex items-center space-x-5">
-                <p>Duration</p>
-                <p>20 hours</p>
-              </div>
-            </div>
-          </Card>
+        <section className="grid md:grid-cols-4 lg:grid-cols-4 gap-5 ">
+          {data.map((item, index) => {
+            return (
+              <Card
+                key={index}
+                className="shadow-lg overflow-hidden group cursor-pointer"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt="logo"
+                    className="group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3>{item.label}</h3>
+                  <section className="flex justify-between text-sm">
+                    <div className="flex items-center space-x-2  mt-2 text-gray-500">
+                      <p>Duration</p>
+                      <p>20 hours</p>
+                    </div>
+                    <p className="py-2 px-4 bg-gray-100 rounded-lg">$33.99</p>
+                  </section>
+                </div>
+              </Card>
+            );
+          })}
         </section>
+        <div className="mt-10 flex justify-center ">
+          <Button>View All Jobs</Button>
+        </div>
       </div>
     </main>
   );
