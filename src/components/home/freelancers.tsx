@@ -1,16 +1,34 @@
 import React from "react";
 import { CarouselSize } from "./carousel";
+import CardsComponent from "./cardscomponent";
+
+import image1 from "/public/pexels-pixabay-60504.jpg";
+import image2 from "/public/pexels-cottonbro-5427552.jpg";
+import image3 from "/public/pexels-goumbik-574069.jpg";
+import image4 from "/public/pexels-pixabay-270572.jpg";
 
 const Freelancers = () => {
+  const data = [
+    {
+      label: "Cybersecurity",
+      image: image1.src,
+    },
+    {
+      label: "Art",
+      image: image2.src,
+    },
+    {
+      label: "Coding",
+      image: image3.src,
+    },
+    {
+      label: "Music",
+      image: image4.src,
+    },
+  ];
   return (
-    <div>
-      <div className="container py-10">
-        <h2 className="text-4xl mb-10">Top Freelancers</h2>
-
-        <div className="">
-          <CarouselSize />
-        </div>
-      </div>
+    <div className="container py-20">
+      <CardsComponent title="Freelancers" data={data} />
     </div>
   );
 };

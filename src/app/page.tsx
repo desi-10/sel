@@ -49,7 +49,7 @@ export default function Home() {
       <div className="bg-white">
         <Popular />
       </div>
-      <div className="bg-yellow-500">
+      <div className="bg-amber-300">
         <Freelancers />
       </div>
       <div className="bg-white">

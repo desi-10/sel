@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <main className="bg-yellow-500">
-      <section className="container p-5 divide-y space-y-5">
+    <main className="bg-amber-300">
+      <section className="container py-20 divide-y divide-black space-y-5">
         <div className="flex justify-between space-x-10 py-5">
           <section className="w-96 space-y-5">
             <img src="" alt="logo" />

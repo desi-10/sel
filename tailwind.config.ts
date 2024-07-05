@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -17,7 +18,6 @@ const config = {
         "2xl": "1400px",
       },
     },
-
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -25,6 +25,7 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "primary-color": "rgb(252 211 77 / var(--tw-text-opacity))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

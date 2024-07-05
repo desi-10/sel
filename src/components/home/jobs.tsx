@@ -4,8 +4,6 @@ import { Button } from "../ui/button";
 import digitalmarketing from "/public/digital-marketing.jpg";
 
 const Jobs = () => {
-  console.log(digitalmarketing);
-
   const data = [
     {
       label: "Digital Marketing",
@@ -31,7 +29,7 @@ const Jobs = () => {
 
   return (
     <main>
-      <div className="container py-10">
+      <div className="container py-20">
         <h2 className="text-4xl mb-5">Jobs of the day</h2>
 
         <ul className="flex items-center space-x-3 mb-10">
@@ -41,7 +39,7 @@ const Jobs = () => {
           <Button variant={"outline"}>Backend</Button>
         </ul>
 
-        <section className="grid md:grid-cols-4 lg:grid-cols-4 gap-5 ">
+        <section className="grid md:grid-cols-4 lg:grid-cols-3 gap-5 ">
           {data.map((item, index) => {
             return (
               <Card
