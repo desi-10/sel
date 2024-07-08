@@ -7,17 +7,19 @@ import google from "/public/google.webp";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/components/logo";
+import BackHome from "@/components/BackHome";
 
 const LoginPage = () => {
   return (
-    <section className="w-full h-screen grid grid-cols-2">
-      <div className="bg-amber-300 h-full"></div>
-      <section className=" flex justify-center items-center">
+    <main className="w-full h-screen grid grid-cols-2">
+      <section className="bg-amber-300 "></section>
+      <form className=" flex justify-center items-center">
         <div className="w-full px-20 lg:px-28">
-          <div className="flex justify-center mb-5">
-            {/* <img src="" alt="logo" /> */}
+          <BackHome />
+          <div className="flex justify-center mb-3">
             <Logo />
           </div>
+
           <h1 className="text-2xl text-center mb-2">Login</h1>
           <p className="text-center mb-5">Login to access your account</p>
 
@@ -48,16 +50,14 @@ const LoginPage = () => {
                 </label>
               </div>
 
-              <Link href="/forgot-password">
+              <Link href="/forgotten-password">
                 <Button className="p-0" variant="link">
                   Forgotten password
                 </Button>
               </Link>
             </div>
 
-            <Button size="lg" className="w-full">
-              Login
-            </Button>
+            <Button className="w-full">Login</Button>
 
             <div className="flex justify-center items-center">
               <Link href="/register">
@@ -67,16 +67,15 @@ const LoginPage = () => {
               </Link>
             </div>
 
-            <div className="flex items-center w-full justify-between mt-1 mb-3">
-              <div className="h-[1px] w-full bg-gray-300"></div>
-              <div className="text-sm px-2 text-gray-500">Or</div>
-              <div className="h-[1px] w-full bg-gray-300"></div>
-            </div>
+            <ul className="flex items-center w-full justify-between mt-1 mb-3">
+              <li className="h-[1px] w-full bg-gray-300"></li>
+              <li className="text-sm px-2 text-gray-500">Or</li>
+              <li className="h-[1px] w-full bg-gray-300"></li>
+            </ul>
 
             <Button
               variant="outline"
-              size="lg"
-              className="w-full mb-5 flex justify-center items-center space-x-3 text-gray-500 py-5"
+              className="w-full  flex justify-center items-center space-x-3 text-gray-500 py-5"
             >
               <div className="w-6 h-6">
                 <Image
@@ -92,8 +91,8 @@ const LoginPage = () => {
             </Button>
           </div>
         </div>
-      </section>
-    </section>
+      </form>
+    </main>
   );
 };
 

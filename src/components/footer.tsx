@@ -1,4 +1,5 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -7,24 +8,24 @@ const Footer = () => {
       <section className="container py-20 divide-y divide-black space-y-5">
         <div className="flex justify-between space-x-10 py-5">
           <section className="w-96 space-y-5">
-            <img src="" alt="logo" />
+            <Image src="" alt="logo" width={100} height={100} />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Perferendis soluta illo cum fuga, nobis dicta porro voluptate
               assumenda exercitationem rem, hic nesciunt id sint obcaecati at
               eos minus quibusdam! Dolore.
             </p>
-            <div className="flex items-center space-x-3">
-              <div className="bg-black rounded-full p-2">
+            <ul className="flex items-center space-x-3">
+              <li className="bg-black rounded-full p-2">
                 <Facebook className="text-white w-4 h-4" />
-              </div>
-              <div className="bg-black rounded-full p-2">
+              </li>
+              <li className="bg-black rounded-full p-2">
                 <Twitter className="text-white w-4 h-4" />
-              </div>
-              <div className="bg-black rounded-full p-2">
+              </li>
+              <li className="bg-black rounded-full p-2">
                 <Linkedin className="text-white w-4 h-4" />
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
 
           <section className="flex w-full justify-between space-x-5">
@@ -70,17 +71,17 @@ const Footer = () => {
           </section>
         </div>
 
-        <div className="flex justify-between items-center py-5">
+        <section className="flex justify-between items-center py-5">
           <p>copyright</p>
 
-          <section>
+          <div>
             <ul className="flex justify-between items-center space-x-5">
               <li>Private Policy</li>
               <li>Terms and condition</li>
               <li>Security</li>
             </ul>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
     </main>
   );

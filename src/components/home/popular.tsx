@@ -5,6 +5,7 @@ import image1 from "/public/pexels-pixabay-60504.jpg";
 import image2 from "/public/pexels-cottonbro-5427552.jpg";
 import image3 from "/public/pexels-goumbik-574069.jpg";
 import image4 from "/public/pexels-pixabay-270572.jpg";
+import image5 from "/public/digital-marketing.jpg";
 
 const Popular = () => {
   const data = [
@@ -13,8 +14,8 @@ const Popular = () => {
       image: image1.src,
     },
     {
-      label: "Art",
-      image: image2.src,
+      label: "Digital Marketing",
+      image: image5.src,
     },
     {
       label: "Coding",

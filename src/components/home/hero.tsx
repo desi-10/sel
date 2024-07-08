@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 const Hero = () => {
   return (
     <div className="">
-      <div className="w-[700px] mx-auto">
+      <div className="grid w-[800px] mx-auto">
         <section className="space-y-5">
           <h1 className="text-white text-center text-2xl mb-5">
             The <span className="text-primary-color">#1 Platform</span> for{" "}
@@ -16,21 +16,22 @@ const Hero = () => {
             Find Services, Products or Jobs
           </h1>
           <p className="text-white text-center text-sm">
-            Are you in head a service or Job? Experienced freelancers available
-            to give you the best services for your project
+            Are you in need of a service or Job? Experienced freelancers
+            available to give you the <br />
+            best services for your project
           </p>
         </section>
 
         <section className="w-full flex items-center bg-white p-3 rounded-lg mt-10">
           <div className="border-r flex items-center">
             <House />
-            <ComboBox />
+            <ComboBox label="Industry" />
           </div>
           <div className="border-r pl-3 flex items-center">
             <MapPin />
-            <ComboBox />
+            <ComboBox label="Locations" />
           </div>
-          <Input className="border-0" placeholder="Your keyword..." />
+          <Input className="border-0 " placeholder="Your keyword..." />
           <Button className="flex items-center space-x-2 px-3">
             <Search className="w-4 h-4" />
             <p>Search</p>

@@ -1,5 +1,4 @@
 import React from "react";
-import { CarouselSize } from "./carousel";
 import CardsComponent from "./cardscomponent";
 
 import image1 from "/public/pexels-pixabay-60504.jpg";

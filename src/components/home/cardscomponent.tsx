@@ -76,7 +76,7 @@ const CardsComponent = ({ data, title }: CardProps) => {
               <motion.div
                 variants={cardVariants}
                 key={index}
-                className="relative inset-0  w-[80%] h-72 overflow-hidden rounded-lg shadow-lg group cursor-pointer"
+                className="relative inset-0  w-[80%] h-72 overflow-hidden rounded-2xl shadow-lg group cursor-pointer"
               >
                 <Image
                   src={item.image}

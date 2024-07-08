@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 import digitalmarketing from "/public/digital-marketing.jpg";
+import Image from "next/image";
 
 const Jobs = () => {
   const data = [
@@ -55,10 +56,12 @@ const Jobs = () => {
                 className="shadow-lg overflow-hidden group cursor-pointer"
               >
                 <div className="overflow-hidden">
-                  <img
+                  <Image
                     src={item.image}
                     alt="logo"
                     className="group-hover:scale-110 transition-all duration-300"
+                    width={300}
+                    height={300}
                   />
                 </div>
                 <div className="p-5">

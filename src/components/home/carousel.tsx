@@ -14,6 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { easeIn, motion, stagger } from "framer-motion";
+import Image from "next/image";
 export function CarouselSize() {
   const cardVariants = {
     offscreen: {
@@ -69,7 +70,7 @@ export function CarouselSize() {
                 <Card className="w-full relative">
                   <CardContent className="h-56">
                     <div className="w-full absolute inset-0">
-                      <img src={data.image.src} alt={data.label} />
+                      <Image src={data.image} alt={data.label} />
                     </div>
                     <h3>{data.label}</h3>
                   </CardContent>
