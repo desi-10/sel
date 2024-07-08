@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import TextField from "@mui/material/TextField";
 import { Button } from "@/components/ui/button";
@@ -12,12 +11,16 @@ const Register = () => {
   return (
     <section className="w-full h-screen grid grid-cols-2">
       <div className="flex justify-center items-center">
-        <div className="w-full px-52">
+        <div className="w-full px-20 lg:px-28">
           <div className="flex justify-center mb-5">
             <Logo />
           </div>
-          <h1 className="text-4xl text-center mb-3">Register</h1>
-          <p className="text-center mb-8">Register to get an account</p>
+          <h1 className="text-lg lg:text-xl xl:text-4xl text-center mb-3">
+            Register
+          </h1>
+          <p className="text-sm xl:text-base text-center mb-8">
+            Register to get an account
+          </p>
 
           <div>
             <div className="space-y-5 mb-3">

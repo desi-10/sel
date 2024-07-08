@@ -13,18 +13,28 @@ const LoginPage = () => {
     <section className="w-full h-screen grid grid-cols-2">
       <div className="bg-amber-300 h-full"></div>
       <section className=" flex justify-center items-center">
-        <div className="w-full px-52">
+        <div className="w-full px-20 lg:px-28">
           <div className="flex justify-center mb-5">
             {/* <img src="" alt="logo" /> */}
             <Logo />
           </div>
-          <h1 className="text-4xl text-center mb-3">Login</h1>
-          <p className="text-center mb-8">Login to access your account</p>
+          <h1 className="text-2xl text-center mb-2">Login</h1>
+          <p className="text-center mb-5">Login to access your account</p>
 
           <div>
             <div className="space-y-5 mb-3">
-              <TextField label="Email" type="email" className="w-full p-0" />
-              <TextField label="Password" type="password" className="w-full" />
+              <TextField
+                size="small"
+                label="Email"
+                type="email"
+                className="w-full p-0"
+              />
+              <TextField
+                size="small"
+                label="Password"
+                type="password"
+                className="w-full"
+              />
             </div>
 
             <div className="flex items-center justify-between mb-5">

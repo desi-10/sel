@@ -30,16 +30,24 @@ const Jobs = () => {
   return (
     <main>
       <div className="container py-20">
-        <h2 className="text-4xl mb-5">Jobs of the day</h2>
+        <h2 className="text-2xl mb-5">Jobs Of The Day</h2>
 
         <ul className="flex items-center space-x-3 mb-10">
-          <Button variant={"outline"}>Marketing</Button>
-          <Button variant={"outline"}>UI/UX</Button>
-          <Button variant={"outline"}>Product</Button>
-          <Button variant={"outline"}>Backend</Button>
+          <Button size="sm" variant={"outline"}>
+            Marketing
+          </Button>
+          <Button size="sm" variant={"outline"}>
+            UI/UX
+          </Button>
+          <Button size="sm" variant={"outline"}>
+            Product
+          </Button>
+          <Button size="sm" variant={"outline"}>
+            Backend
+          </Button>
         </ul>
 
-        <section className="grid md:grid-cols-4 lg:grid-cols-3 gap-5 ">
+        <section className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 ">
           {data.map((item, index) => {
             return (
               <Card

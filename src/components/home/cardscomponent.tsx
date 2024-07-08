@@ -27,7 +27,7 @@ const CardsComponent = ({ data, title }: CardProps) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -59,7 +59,7 @@ const CardsComponent = ({ data, title }: CardProps) => {
           transition: { duration: 1, ease: "easeInOut" },
         }}
         viewport={{ once: true, amount: 0.2 }}
-        className="text-3xl mb-10"
+        className="text-2xl mb-10"
       >
         {title}
       </motion.h2>
@@ -76,7 +76,7 @@ const CardsComponent = ({ data, title }: CardProps) => {
               <motion.div
                 variants={cardVariants}
                 key={index}
-                className="relative inset-0 w-[300px] h-96 overflow-hidden rounded-lg shadow-lg group cursor-pointer"
+                className="relative inset-0  w-[80%] h-72 overflow-hidden rounded-lg shadow-lg group cursor-pointer"
               >
                 <Image
                   src={item.image}
@@ -86,7 +86,7 @@ const CardsComponent = ({ data, title }: CardProps) => {
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-all duration-300"
                   priority
                 />
-                <p className="absolute bottom-5 left-5 text-lg text-white z-20">
+                <p className="absolute bottom-5 left-5  text-white z-20">
                   {item.label}
                 </p>
                 <div className="absolute bottom-0  h-full w-full bg-gradient-to-b from-black/0 to-black z-10"></div>

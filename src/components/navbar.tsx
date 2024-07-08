@@ -87,7 +87,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center py-5 container bg-white">
       <img src="" alt="logo" />
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center">
         {navData.map(({ label, href, children }) => (
           <Menubar key={label} className="border-0">
             <MenubarMenu>

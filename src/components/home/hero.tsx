@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="">
       <div className="w-[700px] mx-auto">
         <section className="space-y-5">
-          <h1 className="text-white text-center text-4xl mb-5">
+          <h1 className="text-white text-center text-2xl mb-5">
             The <span className="text-primary-color">#1 Platform</span> for{" "}
             <br />
             Find Services, Products or Jobs
@@ -39,42 +39,42 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center items-center space-x-5 text-white mt-6">
-        <p>Popular services:</p>
+        <p className="">Popular services:</p>
         <ul className="flex items-center space-x-3">
-          <li className="underline">React JS</li>
-          <li className="underline">Node JS</li>
-          <li className="underline">Next JS</li>
+          <li className="underline text-sm">React JS</li>
+          <li className="underline text-sm">Node JS</li>
+          <li className="underline text-sm">Next JS</li>
         </ul>
       </div>
 
       <section className="  text-white flex justify-center items-center mt-16 space-x-20 font-bold">
         <div>
-          <p className="text-3xl font-bold">
+          <p className="text-xl font-bold">
             <CountUp start={0} end={265} className="font-bold" duration={5} />
             <span className="font-bold">K+</span>
           </p>
-          <p className="text-primary-color">Daily Jobs Passed</p>
+          <p className="text-primary-color text-sm">Daily Jobs Passed</p>
         </div>
         <div>
-          <p className="text-3xl">
+          <p className="text-xl">
             <CountUp start={0} end={17} className="font-bold" duration={5} />
             <span className="font-bold">K+</span>
           </p>
-          <p className="text-primary-color">Recruites</p>
+          <p className="text-primary-color text-sm">Recruites</p>
         </div>
         <div>
-          <p className="text-3xl">
+          <p className="text-xl">
             <CountUp start={0} end={15} className="font-bold" duration={5} />
             <span className="font-bold">K+</span>
           </p>
-          <p className="text-primary-color">Freelancers</p>
+          <p className="text-primary-color text-sm">Freelancers</p>
         </div>
         <div>
-          <p className="text-3xl">
+          <p className="text-xl">
             <CountUp start={0} end={28} className="font-bold" duration={5} />
             <span className="font-bold">K+</span>
           </p>
-          <p className="text-yellow-500">Blog Tips</p>
+          <p className="text-primary-color text-sm">Blog Tips</p>
         </div>
       </section>
     </div>

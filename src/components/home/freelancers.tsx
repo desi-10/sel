@@ -28,7 +28,7 @@ const Freelancers = () => {
   ];
   return (
     <div className="container py-20">
-      <CardsComponent title="Freelancers" data={data} />
+      <CardsComponent title="Top Freelancers" data={data} />
     </div>
   );
 };
